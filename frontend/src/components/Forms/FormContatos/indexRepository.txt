@@ -1,0 +1,82 @@
+/*Bug package.json*/
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }, TAG OLD
+
+  /**1a test Object Fields */
+  const [campos, setCampos] = useState({
+    nome: "",
+    email: "",
+    msg: "",
+    telefone: "",
+    radioEmail: false,
+    radioTelefone: false,
+    radioWhatsapp: true,
+    receber: false,
+  });
+(+)
+/*2a Submit*/
+onSubmit={
+(event) => {
+          event.preventDefault();
+          /*console.log(nome, telefone, email, msg);*/
+          if (possoEnviar()) {
+           setCampos({
+              nome: nome,
+              email: email,
+              msg: msg,
+              telefone: telefone,
+              radioEmail: radioEmail,
+              radioTelefone: radioTelefone,
+              radioWhatsapp: radioWhatsapp,
+              receber: receber
+          
+          });
+          
+          aoEnviar(campos);
+            /*aoEnviar({
+              nome,
+              telefone,
+              email,
+              msg,
+              radioEmail,
+              radioTelefone,
+              radioWhatsapp,
+              receber,
+            });*/
+          }
+        }
+    }
+
+
+    ======================================================================
+  const handlerSubmit = async function (event: any) {
+    event.preventDefault();
+    setReceber(event.target.checked);
+    setRadioWhatsapp(event.target.checked);
+    setRadioTelefone(event.target.checked);
+    setRadioEmail(event.target.checked);
+    setMsg(event.target.mensagem.value);
+    setTelefone(event.target.telefone.value);
+    setNome(event.target.nomeSobrenome.value);
+    setEmail(event.target.email.value);
+
+    const rawResponse = await fetch("/send", {
+      method: "POST",
+      headers:{
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin':'*',
+      },
+      body: JSON.stringify({ nome,
+        email,
+        msg,
+        telefone,
+        radioEmail,
+        radioTelefone,
+        radioWhatsapp,
+        receber }),
+    });

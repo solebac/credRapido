@@ -1,0 +1,19 @@
+.lista-item {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  /*margin: 2rem auto;*/
+  background: var(--blue-heard);
+  padding: 3rem 6rem;
+  border-right: 1px solid var(--branco-gelo);
+  box-sizing: border-box;
+}
+.item--texto {
+  color: var(--branco-gelo);
+  text-decoration: none;
+}
+.item--texto:hover{
+  color: var(--yellow-link);
+  text-decoration: underline;
+}

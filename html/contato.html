@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CredRápido</title>
+    <link rel="stylesheet" href="assets/css/util/base.css" />
+    <link rel="stylesheet" href="assets/css/components/rodape.css" />
+    <link rel="stylesheet" href="assets/css/components/cabecalho.css" />
+    <link rel="stylesheet" href="assets/css/contato/contato.css" />
+    <link
+      href="https: //fonts.googleapis.com/css2? family= Elsie+Swash+Caps:wght@900 & family= Montserrat:wght@400;700 & family= Open+Sans:wght@300;400;700 &family= Roboto:wght@100;300;400;700 & display=swap"
+      rel="folha de estilo"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <img
+          class="cabecalho__logo-principal"
+          src="./assets/imagens/logo-white.png"
+          alt=""
+        />
+        <ul class="cabecalho__itens">
+          <li class="cabecalho__itens--subItens">
+            <a class="cabecalho__subItens-link" href="index.html">Home</a>
+          </li>
+          <li class="cabecalho__itens--subItens">
+            <a class="cabecalho__subItens-link" href="servicos.html">Seviços</a>
+          </li>
+          <li class="cabecalho__itens--subItens">
+            <a class="cabecalho__subItens-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="cabecalho__itens--subItens">
+            <a class="cabecalho__subItens-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cabecalho__contato cabecalho__fundo2"></div>
+    </header>
+    <div>
+      <img class="call" src="./assets/imagens/whatsapp.png" alt="" />
+    </div>
+    <main>
+      <section class="container">
+        <div class="contato">
+          <legend class="contato__titulo">Fale conosco</legend>
+          <legend class="contato__subtitulo">
+            Você pode esclarecer todas as suas dúvidas sobre nossos produtos e
+            serviços.
+          </legend>
+          <form class="contato__form">
+            <fieldset>
+              <label for="nomeSobrenome" class="contato__etiqueta">Nome e sobrenome</label>
+              <input type="text" id="nomeSobrenome" class="contato__form--input-padrao" required />
+              <label for="email" class="contato__etiqueta">Email</label>
+              <input type="email" id="email" class="contato__form--input-padrao" required placeholder="seuemail@dominio.com"/>
+              <label for="telefone" class="contato__etiqueta">Telefone</label>
+              <input type="tel" id="telefone" class="contato__form--input-padrao" required placeholder="(xx)xxxxx-xxxx"/>
+              <label for="mensagem" class="contato__etiqueta">Mensagem</label>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                rows="6"
+                class="contato__form--input-padrao"
+              ></textarea>
+
+              <fieldset>
+                <legend class="contato__etiqueta">Como prefere o nosso contato?</legend>
+                <label for="radio-email" class="contato__etiqueta">
+                  <input
+                    type="radio"
+                    name="contato"
+                    value="email"
+                    id="radio-email"
+                    placeholder="Email"
+                  />Email</label
+                >
+                <label for="radio-telefone" class="contato__etiqueta">
+                  <input
+                    type="radio"
+                    name="contato"
+                    value="telefone"
+                    id="radio-telefone"
+                    placeholder="Telfone"
+                  />Telefone</label
+                >
+                <label for="radio-whatsapp" class="contato__etiqueta">
+                  <input
+                    type="radio"
+                    name="contato"
+                    value="whatsapp"
+                    id="radio-whatsapp"
+                    placeholder="WhatsApp"
+                    checked
+                  />WhatsApp</label
+                >
+              </fieldset>
+
+              <fieldset>
+                <legend class="contato__etiqueta">Qual horário prefere ser atendido?</legend>
+                <select id="preferencial">
+                  <option value="">Manhã</option>
+                  <option value="">Tarde</option>
+                  <option value="">Noite</option>
+                </select>
+              </fieldset>
+
+              <label class="checkboks contato__etiqueta" for="receber"
+                ><input type="checkbox" id="receber" />Gostaria de receber
+                nossas novidades por email?</label
+              >
+
+              <input type="submit" value="Enviar" class="enviar"/>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="contato">
+          <p class="contato__titulo">Nosso estabelecimento</p>
+          <p class="contato__subtitulo">
+            Nosso estabelecimento esta localizado no coração da cidade.
+          </p>
+          <div class="contato__mapa--conteudo">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15036.526181381092!2d-46.94813187079959!3d-19.57886423882087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-19.5685789!2d-46.9385294!4m5!1s0x94b03724089b7c65%3A0x7a88fcea268b41d4!2scred%20rapido%20araxa!3m2!1d-19.589166199999998!2d-46.9381278!5e0!3m2!1spt-BR!2sbr!4v1649300824251!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="rodape">
+        <div class="rodape__fluid">
+          <div class="coluna">
+            <img
+              class="cabecalho__logo-principal"
+              src="./assets/imagens/logo-white.png"
+              alt=""
+            />
+            <hr class="rodape_regua" />
+            <p class="rodape__pensamento">
+              Não case por dinheiro... Você pode conseguir empréstimos com taxas
+              menores...
+            </p>
+          </div>
+
+          <div class="coluna">
+            <p class="rodape__titulo">Acesso Rápido</p>
+            <ul class="rodape__lista-item">
+              <li class="rodape__item">
+                <a class="rodape__item--texto" href="#">Empréstimo</a>
+              </li>
+              <li class="rodape__item">
+                <a class="rodape__item--texto" href="#">Refinanciamento</a>
+              </li>
+              <li class="rodape__item">
+                <a class="rodape__item--texto" href="#">Portabilidade</a>
+              </li>
+              <li class="rodape__item">
+                <a class="rodape__item--texto" href="#">Dinheiro</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="coluna">
+            <p class="rodape__titulo">Conecte-se</p>
+            <p class="rodape__item--redes">Nossas redes socíais</p>
+            <ul class="rodape__redes">
+              <li>
+                <a href="#" class="rodape__social-midia"
+                  ><img src="./assets/icones/facebook.svg" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="rodape__social-midia"
+                  ><img src="./assets/icones/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="rodape__social-midia"
+                  ><img src="./assets/icones/twitter.svg" alt="Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="coluna">
+            <h1 class="center">
+              <img
+                class="rodape_oferta"
+                src="./assets/imagens/oferta.png"
+                alt="Cobrimos qualquer oferta"
+              />
+            </h1>
+          </div>
+        </div>
+        <address class="copyright">
+          <span>Araxá, Rua Padre Anchieta - 13 Centro | 38180-000</span><br />
+          Telefone: (11) 00000-0000 <br />
+        </address>
+        <p class="copyright">© Copyright CredRápido - 2022</p>
+      </section>
+    </footer>
+  </body>
+</html>

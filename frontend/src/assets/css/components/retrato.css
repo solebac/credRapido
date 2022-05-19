@@ -1,0 +1,83 @@
+.retrato {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  /*z-index: -1;*/
+}
+.retrato-img {
+  border-radius: 50%;
+  height: 190px;
+  width: 190px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.4s;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.retrato-img:hover{
+  transform: scale(1.20);
+}
+.retrato-item {
+  background: var(--branco-gelo);
+  padding: 40px 20px;
+  height: 380px;
+  overflow: hidden;
+  box-shadow: 10px 10px 30px #eee;
+  box-sizing: border-box;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.retrato-card {
+  /*width: 960px;*/
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+.retrato-item:hover{
+  background: var(--cinza-card);
+}
+.retrato-nome {
+  font-size: 1.4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-weight: 500;
+  color: var(--blue-heard);
+}
+.retrato-nome:hover{
+  color: var(--branco);
+  transition: 3s all;
+}
+.retrato-span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--green-whatsapp);
+}
+.retrato-span--whatsapp i::before{
+    content: '\2706';
+    font-size: .9rem;
+    margin-right: 3px;
+}
+.retrato__whatsapp-link{
+  color: var(--green-whatsapp);
+  text-decoration: none;
+}
+.retrato-span:hover, .retrato__whatsapp-link:hover{
+  transition: 2s all;
+  transform: scale(5);
+  color: var(--branco);
+}
+.retrato__titulo {
+  padding: 0 0 2rem 2rem;
+  padding-top: .625rem;
+  padding-right: 0px;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.retrato__titulo--sombra{
+    border-left: .8rem solid var(--yellow-link);
+    border-bottom: 1px solid var(--yellow-link);
+    margin-bottom: 2rem;
+}

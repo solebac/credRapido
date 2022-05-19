@@ -1,0 +1,58 @@
+@import url(reset.css);
+@import url(entre-section.css);
+@font-face {
+  font-family: "icones";
+  src: url(../../font/icones.ttf);
+}
+:root {
+  --fonte-master: "Roboto", sans-serif, "icones";
+  --branco: #ffffff;
+  --blue-heard: #2a3d55;
+  --branco-gelo: #ddd9ce;
+  --cinza-texto: #807c7c;
+  --cinza-card: #9d9e94;
+  --yellow-link: #c78c19;
+  --yellow-opaco: #ffff0070;
+  --green-whatsapp: #00bb2d;
+}
+body {
+  font-family: var(--fonte-master);
+}
+header {
+  background-color: var(--blue-heard);
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.titulo {
+  color: var(--blue-heard);
+  width: 600px;
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.titulo__complemento {
+  color: var(--blue-heard);
+  width: 600px;
+  display: inline-block;
+  padding: 2rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.call {
+  width: 70px;
+  height: 64px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.center {
+  text-align: center;
+}

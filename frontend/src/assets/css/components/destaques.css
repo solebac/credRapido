@@ -1,0 +1,46 @@
+.destaque {
+  text-align: center;
+}
+.destaque__titulo {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.destaque__subTitulo {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+.destaque__texto {
+  padding: 1rem 4rem 2rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--cinza-texto);
+}
+.destaque__imagem {
+  width: 80%;
+  height: 410px;
+  background-image: url(../../imagens/analista.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+.destaque__lista {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.destaque__itens{
+  text-align: left;
+  line-height: 1.62;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  color: var(--cinza-texto);
+  font-weight: 600;
+}
+.destaque__itens::before {
+  content: "\1F5F8";
+  margin-right: 5px;
+}
