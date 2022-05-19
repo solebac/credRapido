@@ -49,13 +49,13 @@ const FormContatos = ({ aoEnviar }: any) => {
   const handlerSubmit = async function (event: any) {
     event.preventDefault();
 
-    if (await possoEnviar()) {
+    if (true) {
       const header = new Headers();
       header.append("Content-Type", "application/json");
       header.append("Access", 'application/json"');
       header.append("Access-Control-Allow-Origin", "*");
 
-      const rawResponse = await fetch(`${BASE_URL}/api/send`, {
+      const rawResponse = await fetch(`${BASE_URL}/api/sendjs`, {
         method: "POST",
         headers: header,
         body: JSON.stringify({
@@ -72,7 +72,7 @@ const FormContatos = ({ aoEnviar }: any) => {
       });
       const content = await rawResponse.json();
 
-      console.log(content.message);
+      console.log(content);
     } else {
       console.log("Campos com validação falha...!");
     }
