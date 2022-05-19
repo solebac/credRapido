@@ -32,7 +32,7 @@ const FormContatos = ({ aoEnviar }: any) => {
     document.title += test;
   }, [test]);
 
-  function possoEnviar() {
+  /*function possoEnviar() {
     //https://stackoverflow.com/questions/16174182/typescript-looping-through-a-dictionary
     let valida = true;
     Object.entries(erros).forEach(([key, value]) => {
@@ -44,7 +44,7 @@ const FormContatos = ({ aoEnviar }: any) => {
     });
 
     return valida;
-  }
+  }*/
 
   const handlerSubmit = async function (event: any) {
     event.preventDefault();
