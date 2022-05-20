@@ -1,5 +1,5 @@
 const validaFields = ( $fields : string): {} => {
-    if ($fields.length !== 11) {
+  if ($fields.length < 11) {
       return {
         valido: false,
         texto: "Telefone deve conter no mínimo 11 digitos...!",

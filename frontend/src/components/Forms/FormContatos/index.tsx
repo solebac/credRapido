@@ -1,9 +1,11 @@
 import Validation from "contexts/Validation";
 import React, { useContext, useEffect, useState } from "react";
 import { BASE_URL } from "utils/requests";
+import BotaoEnviar from "../BotaoEnviar";
 
 const FormContatos = ({ aoEnviar }: any) => {
   const validacoes = useContext(Validation);
+  const [visible, setVisible] = useState(true);
   //Forma opcional.: const aoEnviar = $props.aoEnviar;
   const [erros, setErros] = useState({ msg: { valido: true, texto: "" } });
   const [receber, setReceber] = useState(false);
@@ -19,20 +21,32 @@ const FormContatos = ({ aoEnviar }: any) => {
   const arr = useState("");
   const email = arr[0];
   const setEmail = arr[1];
-
+  const [retorno, setRetorno] = useState("");
+  
+  useEffect(() => {
+    setNome("");
+    setTelefone("");
+    setEmail("");
+    setAssunto("");
+    setMsg("");
+    setRadioWhatsapp(false);
+    setRadioTelefone(false);
+    setRadioWhatsapp(true);
+    setReceber(false);
+    setErros({ msg: { valido: true, texto: "" } });
+    if (retorno !== '') {
+      console.log("Retorno.: " + retorno);
+      setVisible(false);
+    }
+  }, [retorno]);
+  
   /**Event-Handle any TypeScript*/
   function handleChange(event: any) {
     /*console.log($event.target.value);*/
     setMsg(event.target.value);
   }
 
-  const [test, setTest] = useState(0);
-
-  useEffect(() => {
-    document.title += test;
-  }, [test]);
-
-  /*function possoEnviar() {
+  function possoEnviar() {
     //https://stackoverflow.com/questions/16174182/typescript-looping-through-a-dictionary
     let valida = true;
     Object.entries(erros).forEach(([key, value]) => {
@@ -44,12 +58,11 @@ const FormContatos = ({ aoEnviar }: any) => {
     });
 
     return valida;
-  }*/
+  }
 
   const handlerSubmit = async function (event: any) {
     event.preventDefault();
-
-    if (true) {
+    if (possoEnviar()) {
       const header = new Headers();
       header.append("Content-Type", "application/json");
       header.append("Access", 'application/json"');
@@ -71,8 +84,13 @@ const FormContatos = ({ aoEnviar }: any) => {
         }),
       });
       const content = await rawResponse.json();
-
-      console.log(content);
+      const test = content.response;
+      if (test != null && test.length > 3) {
+        let testTmp = test.substring(0, 3);
+        if (testTmp === "250") {
+          setRetorno(testTmp); 
+        }
+      }
     } else {
       console.log("Campos com validação falha...!");
     }
@@ -85,15 +103,7 @@ const FormContatos = ({ aoEnviar }: any) => {
         Você pode esclarecer todas as suas dúvidas sobre nossos produtos e
         serviços.
       </legend>
-      <h1>{test}</h1>
-      <button
-        onClick={() => {
-          setTest(test + 1);
-          console.log(test);
-        }}
-      >
-        Contador
-      </button>
+
       <form className="contato__form" onSubmit={handlerSubmit}>
         <fieldset>
           <label htmlFor="nomeSobrenome" className="contato__etiqueta">
@@ -103,7 +113,7 @@ const FormContatos = ({ aoEnviar }: any) => {
             value={nome}
             onChange={(event) => {
               let tmpNome = event.target.value;
-              if (tmpNome.length > 12) {
+              if (tmpNome.length > 50) {
                 tmpNome = tmpNome.substring(0, 12);
               }
               setNome(tmpNome);
@@ -249,7 +259,8 @@ const FormContatos = ({ aoEnviar }: any) => {
             Gostaria de receber nossas novidades por email?
           </label>
 
-          <input type="submit" value="Enviar" className="enviar" />
+          {visible ? <BotaoEnviar /> : ''}
+
         </fieldset>
       </form>
     </section>
