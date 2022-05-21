@@ -45,7 +45,7 @@
   margin-right: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .destaque__titulo {
       padding: 1.5rem 0;
       font-size: 1.4rem;

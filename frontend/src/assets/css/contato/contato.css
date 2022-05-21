@@ -53,7 +53,7 @@
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .contato__titulo {
     text-align: center;
     font-size: 1.4rem;

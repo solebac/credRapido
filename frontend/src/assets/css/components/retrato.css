@@ -81,7 +81,7 @@
     border-bottom: 1px solid var(--yellow-link);
     margin-bottom: 2rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .retrato {
     display: flex;
     flex-direction: column;
