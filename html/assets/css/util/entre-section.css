@@ -1,6 +1,12 @@
-.between{
-    margin-bottom: 5.625rem;
+.between {
+  margin-bottom: 5.625rem;
 }
-.ceiling{
-    margin-top: 1rem;
+.ceiling {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .between {
+    margin-bottom: 2rem;
+  }
 }

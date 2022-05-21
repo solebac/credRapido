@@ -1,10 +1,12 @@
 @import url(reset.css);
 @import url(entre-section.css);
+/*Alter*/
 @font-face {
-  font-family: "icones";
-  src: url(../../font/icones.ttf);
+    font-family: 'icones';
+    src: url(../../font/icones.ttf);
 }
 :root {
+  /*Alter*/
   --fonte-master: "Roboto", sans-serif, "icones";
   --branco: #ffffff;
   --blue-heard: #2a3d55;
@@ -55,4 +57,22 @@ header {
 }
 .center {
   text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .titulo , .titulo__complemento {
+    width: auto;
+  }
+  .titulo{
+    font-size: 1.rem;
+  }
+  .titulo__complemento{
+    font-size: 0.8rem;
+  }
+  .cabecalho__fundo--absolute{
+    min-height: auto !important;
+  }
+  .call{
+    display: none;
+  }
+  
 }

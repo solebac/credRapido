@@ -39,3 +39,22 @@
   height: 380px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 600px) {
+  .sobre{
+    display: block;
+  }
+  .sobre__box {
+    font-size: 1rem;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sobre_coluna {
+    flex: auto;
+    max-width: 100%;
+  }
+  .silencia{
+    display: none;
+  }
+}

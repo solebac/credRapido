@@ -44,3 +44,24 @@
   content: "\1F5F8";
   margin-right: 5px;
 }
+
+@media screen and (max-width: 800px) {
+  .destaque__titulo {
+      padding: 1.5rem 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .destaque__subTitulo {
+      font-size: 1rem;
+    }
+    .destaque__texto {
+      padding: 0.5rem 2rem 1rem;
+      font-size: 0.8rem;
+      box-sizing: border-box;
+    }
+    .destaque__itens{
+      margin-left: 1rem;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+}

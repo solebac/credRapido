@@ -75,3 +75,18 @@
   line-height: 1.4;
   color: var(--branco);
 }
+
+@media screen and (max-width: 600px) {
+  .selencia{
+    display: none;
+  }
+  .rodape__fluid{
+    flex-direction: column;
+    align-items: center;
+  }
+  .coluna {
+    flex: auto;
+    max-width: 100%;
+    padding: 0.1rem;
+  }
+}

@@ -81,3 +81,15 @@
     border-bottom: 1px solid var(--yellow-link);
     margin-bottom: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .retrato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .retrato-item {
+    border-radius: 2%;
+    margin: 8px 0;
+  }
+}

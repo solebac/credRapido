@@ -30,7 +30,6 @@
   background: var(--cinza-card);
 }
 .retrato-card {
-  /*width: 960px;*/
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -76,4 +75,17 @@
     border-left: .8rem solid var(--yellow-link);
     border-bottom: 1px solid var(--yellow-link);
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .retrato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .retrato-item {
+    border-radius: 2%;
+    margin: 8px 0;
+  }
 }

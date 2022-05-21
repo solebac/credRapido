@@ -67,3 +67,9 @@ ul li a.cabecalho__subItens-link:hover {
   color: var(--yellow-link);
   text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+  .cabecalho {
+    width: auto;
+  }
+  
+}

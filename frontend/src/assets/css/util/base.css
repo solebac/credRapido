@@ -58,3 +58,22 @@ header {
 .center {
   text-align: center;
 }
+@media screen and (max-width: 1000px) {
+  .titulo , .titulo__complemento {
+    width: auto;
+  }
+  .titulo{
+    font-size: 1.rem;
+  }
+  .titulo__complemento{
+    font-size: 0.8rem;
+    width: auto;
+  }
+  .cabecalho__fundo--absolute{
+    min-height: auto !important;
+  }
+  .call{
+    display: none;
+  }
+  
+}

@@ -17,3 +17,16 @@
   color: var(--yellow-link);
   text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+  .lista-item {
+    flex-direction: column;
+    align-items: center;
+  } 
+  .item{
+    width: 100vw;
+    text-align: center;
+    margin: 1px;
+    padding: 1.5rem 3rem
+  }
+}

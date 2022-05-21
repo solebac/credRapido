@@ -20,7 +20,7 @@ const ComplementoSobre = () => {
             </p>
           </div>
 
-          <div className="sobre_coluna">
+          <div className="sobre_coluna silencia">
             <ImgAposentado2 className="sobre_coluna--imagem" />
           </div>
         </div>
