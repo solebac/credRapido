@@ -41,20 +41,26 @@
 }
 
 @media screen and (max-width: 800px) {
-  .sobre{
-    display: block;
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
   }
   .sobre__box {
     font-size: 1rem;
+    flex: 0 0 100%;
     max-width: 100%;
-    height: auto;
     position: relative;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: auto;
   }
   .sobre_coluna {
     flex: auto;
     max-width: 100%;
   }
-  .silencia{
+  .silencia {
     display: none;
   }
 }

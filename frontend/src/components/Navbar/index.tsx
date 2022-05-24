@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import mainLogo from "assets/imagens/logo-white.png";
 import "assets/css/util/base.css";
 import "assets/css/components/cabecalho.css";
+import imgsap from "assets/imagens/whatsapp.png";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -12,13 +13,13 @@ const Navbar = () => {
   }
   useEffect(() => {
     if (isOpen) {
-      hasToggle()
+      hasToggle();
     }
   }, [isOpen]);
 
   const handleClick = (event: any) => {
     event.preventDefault();
-    hasToggle()
+    hasToggle();
     setOpen(false);
   };
   return (
@@ -100,6 +101,16 @@ const Navbar = () => {
         >
           Contato
         </Link>
+        <a
+          href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=5534988613813"
+          className="menu-lateral--redirect"
+        >
+          <img
+            className="menu-lateral--whatsapp"
+            src={imgsap}
+            alt="Atendimento personalizado...!"
+          />
+        </a>
       </div>
     </header>
   );

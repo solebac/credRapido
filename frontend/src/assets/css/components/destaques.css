@@ -12,6 +12,7 @@
   font-size: 1.2rem;
 }
 .destaque__texto {
+  text-align: justify;
   padding: 1rem 4rem 2rem;
   font-size: 1rem;
   line-height: 1.65;

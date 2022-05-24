@@ -42,7 +42,7 @@
   transform: scale(1.6);
 }
 .rodape__pensamento {
-  text-align: left;
+  text-align: justify;
   padding: 0.8rem;
   font-size: 0.9rem;
   line-height: 1.65;
@@ -83,6 +83,7 @@
   .rodape__fluid{
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
   }
   .coluna {
     flex: auto;
@@ -91,5 +92,14 @@
   }
   .rodape_regua{
     width: 100%;
+  }
+  .rodape__lista-item{
+    width: 100vw;
+    display: inline-block;
+  }
+  .rodape__redes{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
   }
 }
