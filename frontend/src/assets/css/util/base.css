@@ -5,16 +5,18 @@
   src: url(../../font/icones.ttf);
 }
 :root {
-  --fonte-master: "Roboto", sans-serif, "icones";
+  /*Alter*/
+  --fonte-master: "Roboto", "icones", sans-serif;
   --branco: #ffffff;
   --blue-heard: #2a3d55;
   --branco-gelo: #ddd9ce;
   --cinza-texto: #807c7c;
   --cinza-card: #9d9e94;
   --yellow-link: #c78c19;
-  --yellow-dark: darkorange;
   --yellow-opaco: #ffff0070;
   --green-whatsapp: #00bb2d;
+  --blue-menu: #46536c;
+  --bisque-menu: #fcdfbd;
 }
 body {
   font-family: var(--fonte-master);
@@ -58,7 +60,7 @@ header {
 .center {
   text-align: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .titulo , .titulo__complemento {
     width: auto;
   }
@@ -67,13 +69,12 @@ header {
   }
   .titulo__complemento{
     font-size: 0.8rem;
-    width: auto;
+    font-weight: 600;
   }
   .cabecalho__fundo--absolute{
     min-height: auto !important;
   }
   .call{
     display: none;
-  }
-  
+  } 
 }

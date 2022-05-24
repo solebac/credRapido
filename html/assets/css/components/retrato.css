@@ -13,8 +13,8 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.retrato-img:hover{
-  transform: scale(1.20);
+.retrato-img:hover {
+  transform: scale(1.2);
 }
 .retrato-item {
   background: var(--branco-gelo);
@@ -26,7 +26,7 @@
   border-radius: 5%;
   cursor: pointer;
 }
-.retrato-item:hover{
+.retrato-item:hover {
   background: var(--cinza-card);
 }
 .retrato-card {
@@ -43,7 +43,7 @@
   font-weight: 500;
   color: var(--blue-heard);
 }
-.retrato-nome:hover{
+.retrato-nome:hover {
   color: var(--branco);
   transition: 3s all;
 }
@@ -52,29 +52,29 @@
   font-weight: 500;
   color: var(--green-whatsapp);
 }
-.retrato-span--whatsapp i::before{
-    content: '\2706';
-    font-size: .9rem;
-    margin-right: 3px;
+.retrato-span--whatsapp i::before {
+  content: "\2706";
+  font-size: 0.9rem;
+  margin-right: 3px;
 }
-.retrato-span:hover{
+.retrato-span:hover {
   transition: 2s all;
   transform: scale(5);
   color: var(--branco);
 }
 .retrato__titulo {
   padding: 0 0 2rem 2rem;
-  padding-top: .625rem;
+  padding-top: 0.625rem;
   padding-right: 0px;
   padding-bottom: 2rem;
   padding-left: 1.5rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.retrato__titulo--sombra{
-    border-left: .8rem solid var(--yellow-link);
-    border-bottom: 1px solid var(--yellow-link);
-    margin-bottom: 2rem;
+.retrato__titulo--sombra {
+  border-left: 0.8rem solid var(--yellow-link);
+  border-bottom: 1px solid var(--yellow-link);
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -83,9 +83,22 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .retrato-item {
     border-radius: 2%;
     margin: 8px 0;
+  }
+  .retrato__titulo{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .retrato-img {
+    height: 120px;
+    width: 120px;
+  }
+  .retrato-item{
+    height: 280px;
   }
 }

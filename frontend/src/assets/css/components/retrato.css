@@ -87,9 +87,22 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .retrato-item {
     border-radius: 2%;
     margin: 8px 0;
+  }
+  .retrato__titulo{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .retrato-img {
+    height: 120px;
+    width: 120px;
+  }
+  .retrato-item{
+    height: 280px;
   }
 }

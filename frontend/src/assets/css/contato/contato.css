@@ -54,11 +54,14 @@
 }
 
 @media screen and (max-width: 800px) {
-  .contato__titulo {
-    text-align: center;
-    font-size: 1.4rem;
-    padding: 1rem 0.7rem;
-    font-weight: 500;
-    box-sizing: border-box;
-  } 
+  .contato__titulo{
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+  }
+  .contato__subtitulo {
+    line-height: 1.2;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0.5rem;
+  }
 }

@@ -76,7 +76,7 @@
   color: var(--branco);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .selencia{
     display: none;
   }
@@ -88,5 +88,8 @@
     flex: auto;
     max-width: 100%;
     padding: 0.1rem;
+  }
+  .rodape_regua{
+    width: 100%;
   }
 }

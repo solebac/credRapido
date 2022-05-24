@@ -7,7 +7,7 @@
 }
 :root {
   /*Alter*/
-  --fonte-master: "Roboto", sans-serif, "icones";
+  --fonte-master: "Roboto", "icones", sans-serif;
   --branco: #ffffff;
   --blue-heard: #2a3d55;
   --branco-gelo: #ddd9ce;
@@ -16,6 +16,8 @@
   --yellow-link: #c78c19;
   --yellow-opaco: #ffff0070;
   --green-whatsapp: #00bb2d;
+  --blue-menu: #46536c;
+  --bisque-menu: #fcdfbd;
 }
 body {
   font-family: var(--fonte-master);
@@ -67,12 +69,12 @@ header {
   }
   .titulo__complemento{
     font-size: 0.8rem;
+    font-weight: 600;
   }
   .cabecalho__fundo--absolute{
     min-height: auto !important;
   }
   .call{
     display: none;
-  }
-  
+  } 
 }

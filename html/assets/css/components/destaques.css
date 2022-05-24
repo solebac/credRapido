@@ -55,13 +55,16 @@
       font-size: 1rem;
     }
     .destaque__texto {
-      padding: 0.5rem 2rem 1rem;
-      font-size: 0.8rem;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
       box-sizing: border-box;
     }
     .destaque__itens{
       margin-left: 1rem;
       font-size: 1rem;
       font-weight: 400;
+    }
+    .destaque__imagem{
+      width: 100%;
     }
 }

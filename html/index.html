@@ -22,7 +22,7 @@
     <header>
       <div class="cabecalho">
         
-        <button class="cabecalho__menu">
+        <button class="cabecalho__menu" aria-label="Menu">
           <i></i>
         </button>
 
@@ -46,6 +46,18 @@
           </li>
         </ul>
       </div>
+
+      <nav  class="menu-lateral">
+        <img
+          class="cabecalho__logo-principal menu-lateral--icon"
+          src="./assets/imagens/logo-white.png"
+          alt="" 
+        />
+        <a class="menu-lateral__link menu-lateral__link--home menu-lateral__link--ativo" href="index.html">Home</a>
+        <a class="menu-lateral__link menu-lateral__link--service" href="servicos.html">Seviços</a>
+        <a class="menu-lateral__link menu-lateral__link--about" href="sobre.html">Sobre</a>
+        <a class="menu-lateral__link menu-lateral__link--contact" href="contato.html">Contato</a>
+      </nav>
 
       <div class="cabecalho__fundo cabecalho__fundo--relative">
         <div class="cabecalho__fundo--absolute">
@@ -242,5 +254,6 @@
         <p class="copyright">© Copyright CredRápido - 2022</p>
       </section>
     </footer>
+    <script src="assets/css/components/index.js"></script>
   </body>
 </html>
