@@ -32,7 +32,14 @@ const Navbar = () => {
         >
           <i></i>
         </button>
-        <img className="cabecalho__logo-principal" src={mainLogo} alt="" />
+        <Link to="/">
+          <img
+            className="cabecalho__logo-principal"
+            src={mainLogo}
+            alt="Início"
+          />
+        </Link>
+
         <ul className="cabecalho__itens">
           <li className="cabecalho__itens--subItens">
             <Link className="cabecalho__subItens-link" to="/">
@@ -57,11 +64,13 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="menu-lateral">
-        <img
-          className="cabecalho__logo-principal menu-lateral--icon"
-          src={mainLogo}
-          alt="Menu Financeira"
-        />
+        <Link to="/">
+          <img
+            className="cabecalho__logo-principal menu-lateral--icon"
+            src={mainLogo}
+            alt="Menu Financeira"
+          />
+        </Link>
         <Link
           className="menu-lateral__link menu-lateral__link--home menu-lateral__link--ativo"
           to="/"
